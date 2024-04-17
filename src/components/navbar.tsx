@@ -22,13 +22,13 @@ const Navbar = () => {
           <a href="/" className={linkStyle}>
             Inicio
           </a>
-          <a href="/about" className={linkStyle}>
+          <a href="/@about" className={linkStyle}>
             Nosotros
           </a>
-          <a href="/services" className={linkStyle}>
+          <a href="/@services" className={linkStyle}>
             Cursos/Próximos Eventos
           </a>
-          <a href="/contact" className={linkStyle}>
+          <a href="/@contact" className={linkStyle}>
             Contacto
           </a>
         </nav>
