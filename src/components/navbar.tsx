@@ -62,19 +62,19 @@ const Navbar = () => {
         <motion.nav
           initial={{ opacity: 0, x: 25 }}
           animate={{ opacity: 1, x: 0 }}
-          className="flex flex-col fixed h-screen bg-white w-[75%] md:w-[90%] text-black bottom-0 left-0 gap-6 items-center justify-center"
+          className="flex flex-col fixed z-50 h-screen bg-white w-[75%] md:w-[90%] text-black bottom-0 left-0 gap-6 items-center justify-center"
         >
           <a href="/" className={linkStyle}>
-            Home
+            Inicio
           </a>
-          <a href="/about" className={linkStyle}>
-            About Us
+          <a href="/@about" className={linkStyle}>
+            Nosotros
           </a>
-          <a href="/services" className={linkStyle}>
-            Services
+          <a href="/@services" className={linkStyle}>
+            Cursos/Próximos Eventos
           </a>
-          <a href="/contact" className={linkStyle}>
-            Contact Us
+          <a href="/@contact" className={linkStyle}>
+            Contacto
           </a>
         </motion.nav>
       )}
