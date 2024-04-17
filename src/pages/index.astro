@@ -8,16 +8,16 @@ import Experience from '../components/experience.tsx'
 
 const services = [
 	{
-		title: 'Project Plan',
-		text: 'There are many variations of the passages of lorem Ipsum from available, majority.'
+		title: 'Nuestra Misión',
+		text: 'En Pacer, nuestra misión es ser la fuerza impulsora detrás del logro organizacional, aprovechando nuestra metodología PACER para capacitar a las empresas a alcanzar sus objetivos más cruciales.'
 	},
 	{
-		title: 'Interior Work',
-		text: 'There are many variations of the passages of lorem Ipsum from available, majority.'
+		title: 'Nuestra Visión',
+		text: 'Para el año 2034, nos imaginamos como una franquicia global que ofrece servicios PACER a organizaciones de todo el mundo, entregando metodologías potentes, efectivas y accesibles a través de plataformas web.'
 	},
 	{
-		title: 'Realization',
-		text: 'There are many variations of the passages of lorem Ipsum from available, majority.'
+		title: 'Nuestros Valores',
+		text: 'Disciplina, Confianza, Paciencia, Diligencia, Entusiasmo, Facticidad.'
 	},
 ]
 
@@ -104,15 +104,69 @@ const experiences = [
 
 ---
 
-<MainLayout title = 'Interior Design Home'>
+<MainLayout title = 'PACER CONSULTING GROUP'>
+
+
+
+<div id="default-carousel" class="relative w-full h-56 md:h-[80vh] lg:h-screen" data-carousel="slide">
+    <!-- Carousel wrapper -->
+     <div class="relative h-56 overflow-hidden rounded-lg md:h-[80vh] lg:h-screen">
+         <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/carousel-1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/carousel-2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/carousel-3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/carousel-4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/carousel-5.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+    </div>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
+
 
 	<!-- Banner -->
 	
 	<section class="w-full bg-hero bg-no-repeat bg-cover h-screen lg:min-h-[110vh] px-12 xl:px-0 flex items-center ">
 		<div class="lg:max-w-[1200px] w-full mx-auto flex flex-col">
-			<h1 class="text-[40px] leading-[50px] md:text-[60px] xl:text-[85px] pb-4 font-dm md:leading-[106.25px] w-full xl:max-w-[50%] text-primary-200"> Let Your Home Be Unique </h1>
-			<p class="text-base md:text-[22px] pb-5 font-jost text-text-gray-200 w-full lg:max-w-[50%]">There are many variations of the passages of lorem Ipsum fromavailable,variations of the passages.</p>
-			<Button text="Get Started"/>
+			<h1 class="text-[40px] leading-[50px] md:text-[60px] xl:text-[85px] pb-4 font-dm md:leading-[106.25px] w-full xl:max-w-[50%] text-white">PACER CONSULTING GROUP </h1>
+			<p class="text-base md:text-[22px] pb-5 font-jost text-white w-full lg:max-w-[50%]"> Donde abrimos caminos hacia el éxito.</p>
+			<Button text="AGENDA CON NOSOTROS"/>
 		</div>
 	</section>
 
@@ -125,7 +179,7 @@ const experiences = [
 					<div class="w-full max-w-[358px] mx-auto flex flex-col justify-center items-center gap-3 md:gap-5">
 						<h3 class="text-text-blue font-dm text-[22px] md:text-[25px] leading-loose">{service.title}</h3>
 						<p class="text-base md:text-[22px] tracking-tight font-jost text-text-gray leading-[33px] text-center"> {service.text}</p>
-						<a href="/services" class="text-text-gray-200 leading-snug text-lg tracking-tight font-jost font-semibold gap-2 py-4 md:py-8 startCenter">Read More <ArrowSec /></a>
+						<a href="/services" class="text-text-gray-200 leading-snug text-lg tracking-tight font-jost font-semibold gap-2 py-4 md:py-8 startCenter">Leer más <ArrowSec /></a>
 					</div>
 				)
 			})
@@ -136,16 +190,16 @@ const experiences = [
 
 	<section class="w-full lg:max-w-[1200px] mx-auto px-12 xl:px-0 flex flex-col-reverse justify-center items-center lg:grid grid-cols-2 gap-[75px] pt-[100px] lg:pt-[200px]">
 		<div class="flex flex-col gap-8 max-w-[472px] items-center lg:items-start py-6">
-			<h2 class="text-[30px] text-center capitalize lg:text-left font-dm tracking-wide leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue ">We Create The Art Of Stylish Living Stylishly</h2>
-			<p class="text-base md:text-[22px] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]">It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using that it has a more-or-less normal.</p>
+			<h2 class="text-[30px] text-center capitalize lg:text-left font-dm tracking-wide leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue ">Consultoría para tu empresa, a un solo click</h2>
+			<p class="text-base md:text-[22px] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]">Aproveche el poder de nuestra consultoría enfocada en la ejecución. Implementamos la metodología PACER dentro de las organizaciones para lograr objetivos críticamente importantes.</p>
 			<div class="flex gap-4 pt-3 items-center">
 				<CallIcon/>
 				<p class="flex flex-col text-text-gray-200 font-jost tracking-tight">
-					<span class="text-2xl font-bold leading-9 ">012345678</span>
-					<span class="text-[22px] leading-8">Call Us Anytime</span>
+					<span class="text-2xl font-bold leading-9 ">+52 961 252 7280</span>
+					<span class="text-[22px] leading-8">LLAMANOS </span>
 				</p>
 			</div>
-			<Button text="Get Free Estimate"/>
+			<Button text="OBTÉN UNA ESTIMACIÓN, GRATIS"/>
 		</div>
 
 		<div>
